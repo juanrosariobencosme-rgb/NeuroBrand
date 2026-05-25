@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NeuroBand" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:colorPrimary">@color/soft_blue</item>
+        <item name="android:colorPrimaryDark">@color/deep_black</item>
+        <item name="android:colorAccent">@color/mint_green</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/warm_white</item>
+        
+        <!-- Background color. -->
+        <item name="android:windowBackground">@color/warm_white</item>
+        
+        <!-- Text colors. -->
+        <item name="android:textColorPrimary">@color/deep_black</item>
+        <item name="android:textColorSecondary">@color/smoke_gray</item>
+    </style>
+</resources>

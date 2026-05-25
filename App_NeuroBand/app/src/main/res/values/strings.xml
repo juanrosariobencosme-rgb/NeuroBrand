@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NeuroBand</string>
+    
+    <!-- Connection Screen -->
+    <string name="scan_devices">Escanear Dispositivos</string>
+    <string name="scanning_devices">Escaneando dispositivos…</string>
+    <string name="ensure_device_near">Asegúrate de que tu NeuroBand esté cerca</string>
+    <string name="cancel">Cancelar</string>
+    <string name="scan_again">Escanear de nuevo</string>
+    <string name="device_found">%d dispositivo(s) encontrado(s)</string>
+    <string name="unknown_device">Dispositivo desconocido</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard">Dashboard</string>
+    <string name="heart_rate">Frecuencia Cardíaca</string>
+    <string name="bpm">bpm</string>
+    <string name="respiration">Respiración</string>
+    <string name="rpm">rpm</string>
+    <string name="stress_level">Nivel de Estrés</string>
+    <string name="energy_level">Nivel de Energía</string>
+    <string name="real_time_monitoring">Monitoreo en Tiempo Real</string>
+    <string name="emotional_state">Estado Emocional</string>
+    
+    <!-- Emotional States -->
+    <string name="state_calm">Estado: Calmado</string>
+    <string name="state_calm_desc">Tu estado emocional es estable y tranquilo</string>
+    <string name="state_moderate">Estado: Moderado</string>
+    <string name="state_moderate_desc">Niveles de estrés dentro de rangos normales</string>
+    <string name="state_alert">Estado: Alerta</string>
+    <string name="state_alert_desc">Detectamos niveles elevados de estrés</string>
+    <string name="state_stressed">Estado: Alto Estrés</string>
+    <string name="state_stressed_desc">Recomendamos tomar medidas para relajarte</string>
+    
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="trends">Trends</string>
+    <string name="ia_insights">IA Insights</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Trends -->
+    <string name="emotional_trends">Tendencias Emocionales</string>
+    <string name="last_7_days">Últimos 7 días</string>
+    <string name="stress_trend">Tendencia de Estrés</string>
+    <string name="emotional_breakdown">Desglose Emocional</string>
+    <string name="calm_days">Días Calmados</string>
+    <string name="moderate_days">Días Moderados</string>
+    <string name="high_stress_days">Días de Alto Estrés</string>
+    <string name="weekly_insights">Insights de la Semana</string>
+    
+    <!-- AI Insights -->
+    <string name="ai_insights">IA Insights</string>
+    <string name="neural_synthesis">Síntesis Neuronal Activa</string>
+    <string name="biometric_monitoring">Monitoreo biométrico en tiempo real</string>
+    <string name="biometric_alert">Alerta de Biometría</string>
+    <string name="stress_peak_detected">Detectamos un pico de estrés sostenido en los últimos 15 minutos basado en la variabilidad de su frecuencia cardíaca.</string>
+    <string name="breathing_suggestion">Sugerencia: 5 min de respiración coherente para restablecer el equilibrio.</string>
+    <string name="start_meditation">INICIAR MEDITACIÓN</string>
+    <string name="activate_haptic_calm">ACTIVAR HAPTIC CALM</string>
+    <string name="emotional_projection">Proyección Emocional</string>
+    <string name="next_2h">(Próximas 2h)</string>
+    <string name="ai_model">Modelo IA v3.2</string>
+    <string name="projected_peak">Pico Proyectado</string>
+    
+    <!-- Settings -->
+    <string name="configuration">Configuración</string>
+    <string name="device_settings">Dispositivo</string>
+    <string name="vibration_intensity">Intensidad de Vibración</string>
+    <string name="vibration_desc">Ajustar la fuerza de las vibraciones</string>
+    <string name="haptic_feedback">Feedback Háptico</string>
+    <string name="haptic_desc">Respuestas táctiles de la pulsera</string>
+    <string name="app_settings">Aplicación</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="notifications_desc">Alertas y recordatorios inteligentes</string>
+    <string name="dark_theme">Tema Oscuro</string>
+    <string name="dark_theme_desc">Modo de visualización de la app</string>
+    <string name="privacy">Privacidad</string>
+    <string name="data_sharing">Compartir Datos</string>
+    <string name="data_sharing_desc">Permitir uso de datos anónimos</string>
+    <string name="analytics">Analíticas</string>
+    <string name="analytics_desc">Mejorar la app con datos de uso</string>
+    <string name="your_privacy">Tu Privacidad</string>
+    <string name="privacy_message">Tus emociones son privadas. Tus datos nunca serán vendidos. Tienes control total sobre tu información.</string>
+    
+    <!-- Permissions -->
+    <string name="bluetooth_permission">Permiso de Bluetooth requerido</string>
+    <string name="location_permission">Permiso de ubicación requerido para escanear dispositivos BLE</string>
+    <string name="grant_permission">Conceder Permiso</string>
+    
+    <!-- Errors -->
+    <string name="bluetooth_not_enabled">Bluetooth no está habilitado</string>
+    <string name="connection_failed">Falló la conexión</string>
+    <string name="device_not_found">Dispositivo no encontrado</string>
+    <string name="error_occurred">Ocurrió un error</string>
+</resources>
