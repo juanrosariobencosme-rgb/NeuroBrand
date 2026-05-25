@@ -1,0 +1,126 @@
+/* ============================================
+   NeuroBrand CTA Section
+   Final conversion block
+   ============================================ */
+
+.cta {
+  padding: var(--space-5xl) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--color-white) 0%, #f1f5f9 100%);
+}
+
+/* Decorative background orbs */
+.cta__bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.cta__bg-orb--blue {
+  width: 400px;
+  height: 400px;
+  background: rgba(175, 203, 255, 0.2);
+  top: -100px;
+  right: -100px;
+}
+
+.cta__bg-orb--mint {
+  width: 300px;
+  height: 300px;
+  background: rgba(183, 245, 209, 0.2);
+  bottom: -80px;
+  left: -80px;
+}
+
+.cta__bg-orb--lavender {
+  width: 250px;
+  height: 250px;
+  background: rgba(220, 203, 255, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Content */
+.cta__content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta__badge {
+  margin-bottom: var(--space-lg);
+}
+
+.cta__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.cta__subtitle {
+  color: #64748b;
+  margin-bottom: var(--space-2xl);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+}
+
+/* Form */
+.cta__form {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.cta__form .form-group {
+  justify-content: center;
+}
+
+/* Disclaimer text */
+.cta__disclaimer {
+  margin-top: var(--space-lg);
+  font-size: var(--font-size-xs);
+  color: #94a3b8;
+}
+
+.cta__disclaimer a {
+  color: var(--color-dark);
+  text-decoration: underline;
+  text-decoration-color: rgba(15, 23, 42, 0.3);
+  text-underline-offset: 2px;
+}
+
+.cta__disclaimer a:hover {
+  text-decoration-color: var(--color-dark);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .cta {
+    padding: var(--space-4xl) 0;
+  }
+
+  .cta__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .cta__subtitle {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .cta__content {
+    padding: 0 var(--space-md);
+  }
+
+  .cta__bg-orb {
+    display: none;
+  }
+}

@@ -1,0 +1,299 @@
+/* ============================================
+   NeuroBrand Technology / AI Section
+   Dark dashboard UI showcase
+   ============================================ */
+
+.technology {
+  padding: var(--space-5xl) 0;
+}
+
+/* Header */
+.technology__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-3xl);
+}
+
+.technology__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--color-dark);
+}
+
+.technology__subtitle {
+  color: #64748b;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+/* Dashboard container */
+.technology__dashboard {
+  background: var(--color-dark);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+}
+
+.technology__dashboard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(175, 203, 255, 0.3), transparent);
+}
+
+/* Dashboard grid */
+.technology__dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+/* Tech Panel */
+.tech-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color var(--transition-base), background var(--transition-base);
+}
+
+.tech-panel:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.tech-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tech-panel__status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tech-panel__status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.tech-panel__title {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: var(--space-sm);
+}
+
+.tech-panel__value {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tech-panel__unit {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 4px;
+}
+
+.tech-panel__label {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: var(--space-xs);
+}
+
+/* Main panel spanning */
+.tech-panel--main {
+  grid-column: span 1;
+  position: relative;
+}
+
+.tech-panel--wide {
+  grid-column: span 2;
+}
+
+.tech-panel--full {
+  grid-column: span 3;
+}
+
+/* Heart rate wave */
+.tech-wave {
+  height: 80px;
+  width: 100%;
+  margin: var(--space-md) 0;
+}
+
+.tech-wave path {
+  stroke: var(--color-blue);
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 1000;
+  animation: wave-draw 2s linear infinite;
+}
+
+.tech-wave--mint path {
+  stroke: var(--color-mint);
+}
+
+.tech-wave--lavender path {
+  stroke: var(--color-lavender);
+}
+
+/* Metric bars */
+.tech-metric {
+  margin-bottom: var(--space-md);
+}
+
+.tech-metric:last-child {
+  margin-bottom: 0;
+}
+
+.tech-metric__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.tech-metric__name {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tech-metric__value {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.tech-metric-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.tech-metric-bar__fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1.5s ease;
+}
+
+.tech-metric-bar__fill--blue {
+  background: var(--color-blue);
+}
+
+.tech-metric-bar__fill--mint {
+  background: var(--color-mint);
+}
+
+.tech-metric-bar__fill--lavender {
+  background: var(--color-lavender);
+}
+
+.tech-metric-bar__fill--amber {
+  background: #f59e0b;
+}
+
+/* AI response callout */
+.tech-response {
+  padding: var(--space-md);
+  background: rgba(183, 245, 209, 0.1);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-mint);
+  margin-top: var(--space-lg);
+}
+
+.tech-response__label {
+  font-size: var(--font-size-xs);
+  color: var(--color-mint);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.tech-response__text {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Dashboard footer strip */
+.technology__dashboard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.technology__dashboard-label {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .technology__dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-panel--wide {
+    grid-column: span 2;
+  }
+
+  .tech-panel--full {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .technology__dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-panel--wide,
+  .tech-panel--full {
+    grid-column: span 1;
+  }
+
+  .technology__dashboard {
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+  }
+
+  .technology {
+    padding: var(--space-4xl) 0;
+  }
+
+  .technology__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .technology__dashboard-footer {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+}

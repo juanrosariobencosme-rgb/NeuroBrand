@@ -1,0 +1,204 @@
+/* ============================================
+   NeuroBrand Storytelling Section
+   Alternating image + text blocks
+   ============================================ */
+
+.storytelling {
+  padding: var(--space-5xl) 0;
+}
+
+.storytelling__header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-4xl);
+}
+
+.storytelling__header-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.storytelling__header-text {
+  color: #64748b;
+  font-size: var(--font-size-base);
+}
+
+/* Individual storytelling item */
+.storytelling__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: center;
+  margin-bottom: var(--space-5xl);
+}
+
+.storytelling__item:last-child {
+  margin-bottom: 0;
+}
+
+/* Reverse layout: image on right */
+.storytelling__item--reverse {
+  direction: rtl;
+}
+
+.storytelling__item--reverse > * {
+  direction: ltr;
+}
+
+/* Visual / Image */
+.storytelling__visual {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.storytelling__image {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.storytelling__visual-glow {
+  position: absolute;
+  inset: -10%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(183, 245, 209, 0.1) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Content */
+.storytelling__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.storytelling__label {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #3b82f6;
+}
+
+.storytelling__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.storytelling__text {
+  font-size: var(--font-size-base);
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 50ch;
+}
+
+/* Metrics row */
+.storytelling__metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.storytelling__metric {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 8px 16px;
+  background: var(--color-white);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  font-size: var(--font-size-sm);
+  color: var(--color-dark);
+  font-weight: 500;
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.storytelling__metric:hover {
+  border-color: rgba(203, 213, 225, 0.8);
+  box-shadow: var(--shadow-sm);
+}
+
+.storytelling__metric-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.storytelling__metric-dot--heart {
+  background: #ef4444;
+}
+
+.storytelling__metric-dot--stress {
+  background: #f59e0b;
+}
+
+.storytelling__metric-dot--breath {
+  background: #22c55e;
+}
+
+.storytelling__metric-dot--temp {
+  background: #3b82f6;
+}
+
+.storytelling__metric-dot--sleep {
+  background: #8b5cf6;
+}
+
+/* CTA within story */
+.storytelling__cta {
+  margin-top: var(--space-sm);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .storytelling__item {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .storytelling__item--reverse {
+    direction: ltr;
+  }
+
+  .storytelling__item {
+    margin-bottom: var(--space-4xl);
+  }
+
+  .storytelling__text {
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .storytelling {
+    padding: var(--space-4xl) 0;
+  }
+
+  .storytelling__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .storytelling__item {
+    margin-bottom: var(--space-3xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .storytelling__metrics {
+    gap: var(--space-sm);
+  }
+
+  .storytelling__metric {
+    padding: 6px 12px;
+    font-size: var(--font-size-xs);
+  }
+}

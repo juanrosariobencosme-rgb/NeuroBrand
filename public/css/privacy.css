@@ -1,0 +1,164 @@
+/* ============================================
+   NeuroBrand Privacy Section
+   Dark trust/security block
+   ============================================ */
+
+.privacy {
+  padding: var(--space-5xl) 0;
+  background: var(--color-dark);
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background radial glow */
+.privacy__bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(175, 203, 255, 0.05) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+/* Header */
+.privacy__header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-3xl);
+  position: relative;
+  z-index: 2;
+}
+
+.privacy__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+}
+
+.privacy__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--color-white);
+}
+
+.privacy__subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+/* Grid */
+.privacy__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  position: relative;
+  z-index: 2;
+}
+
+/* Privacy Card */
+.privacy-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: transform var(--transition-base),
+              background var(--transition-base),
+              border-color var(--transition-base);
+}
+
+.privacy-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.privacy-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(175, 203, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+  color: var(--color-blue);
+  font-size: 1.125rem;
+}
+
+.privacy-card__icon--mint {
+  background: rgba(183, 245, 209, 0.1);
+  color: var(--color-mint);
+}
+
+.privacy-card__icon--lavender {
+  background: rgba(220, 203, 255, 0.1);
+  color: var(--color-lavender);
+}
+
+.privacy-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--color-white);
+}
+
+.privacy-card__text {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
+/* Trust badges row */
+.privacy__badges {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-3xl);
+  position: relative;
+  z-index: 2;
+}
+
+.privacy__badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.privacy__badge-icon {
+  color: var(--color-mint);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .privacy__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy {
+    padding: var(--space-4xl) 0;
+  }
+
+  .privacy__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .privacy__badges {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+}

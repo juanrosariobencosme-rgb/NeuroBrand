@@ -1,0 +1,11 @@
+# NeuroBrand — Apache URL Rewriting
+# Routes all non-file/non-directory requests to index.php
+
+RewriteEngine On
+
+# Don't rewrite existing files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
